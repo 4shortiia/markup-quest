@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markup Quest — Learn HTML &amp; CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app" id="app">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+          <div>
+            <h1>Markup Quest</h1>
+            <p class="tagline">Interactive HTML &amp; CSS syllabus</p>
+          </div>
+        </div>
+        <div class="topbar-actions">
+          <button type="button" class="btn ghost" id="btn-how" hidden>How to play</button>
+          <button type="button" class="btn ghost" id="btn-reset">Reset progress</button>
+        </div>
+      </header>
+
+      <main class="main" id="main"></main>
+
+      <footer class="foot">
+        <span>Covers a full beginner-to-intermediate syllabus: semantics, forms, layout, responsive design, and more.</span>
+      </footer>
+    </div>
+
+    <dialog class="modal" id="modal-how">
+      <form method="dialog">
+        <h2>How to play</h2>
+        <ul>
+          <li>Pick a chapter from the map. Earlier chapters unlock the next ones as you pass.</li>
+          <li>Question types include multiple choice, true/false, ordering, matching, and fill-in-the-gap.</li>
+          <li>You need roughly 70% correct in a chapter to unlock the next. Scores are saved in this browser.</li>
+        </ul>
+        <button class="btn primary" value="default">Got it</button>
+      </form>
+    </dialog>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
